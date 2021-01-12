@@ -55,3 +55,55 @@ Reducer에서 액션의 type에 따라 다른 작업을 하기 위해서 switch�
 그렇기 때문에 서로 다른 case에서 let이나 const를 통하여 변수를 선언하려고 하다보면 같은 이름이 중첩될시엔 에러가 발생한다.
 
 첫번째 파라미터로는 액션에 따라 실행할 함수들을 가지고 있는 객체, 두번째 파라미터로는 상태의 기본 값(initialState)를 넣어준다.
+
+수정할 때 [boilerplate](https://ji-gwang.tistory.com/2) 코드를 모듈화하면 깔끔한 리듀서를 만날 수 있다.
+
+이런 코드들의 형식을 외워야하니 진입 장벽이 높다 느낄 수 있지만, 오히려 이런 부분들이 리액트를 공부할 때 재미를 주는 것 같다.
+
+[출처]
+
+[https://velog.io/@miniyoung37/TIL-rwkakf4m](https://velog.io/@miniyoung37/TIL-rwkakf4m)
+
+[https://velopert.com/3358](https://velopert.com/3358)
+
+[https://dinn.github.io/web/redux-ducks-pattern/](https://dinn.github.io/web/redux-ducks-pattern/)
+
+## GitLab 연결
+
+1. git bash를 사용하는 방법
+
+- 기초설정
+
+> $ git config --global user.name "깃헙이름"
+
+> $ git config --global user.email 이메일@도메인
+
+> 설정내용 확인 $ git config --list
+
+> 디렉토리 이동 방법 (cd 폴더명, cd.. 등)
+
+- 현재 폴더를 git 로컬 저장소로 등록
+
+> $ git init
+
+> 폴더 옆에 <master> 표시되면 성공
+
+- 커밋
+
+> $ git commit -m 'initial commit'
+
+- 원격 저장소 추가
+
+> $ git remote add origin 깃허브URL([https://github.com/HyeongJunMin/Bitcamp.git)](https://github.com/HyeongJunMin/Bitcamp/)
+
+> $ git push origin master
+
+**- 폴더 삭제(드디어..!)**
+
+**> $ git rm -r 대상폴더이름(pracProject190514_operator/bin)**
+
+**> $ git commit -m 'delete 대상폴더이름(pracProject190514_operator/bin)'**
+
+**> $ git push origin master**
+
+**> 삭제 성공!!**
