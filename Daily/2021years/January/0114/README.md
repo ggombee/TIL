@@ -143,3 +143,25 @@ eslint-config-prettier는 Prettier와 충돌되는 ESLint 규칙들을 무시하
 자신이 작성한 코드가 자동으로 수정되게 설정하기 위해 Preferences > Settings > Workspace > Editor: Format On Save 옵션에 체크를 해준다.
 
 파일을 저장할때마다 포맷팅이 된다.
+
+### ”[eslint] Delete ‘cr’ [prettier/prettier]” 문제
+
+하다보면 이런 오류가 발생한다ㅠㅠ
+
+검색을 하면서 공통적으로 등장한 키워드는 CRLF와 LF였고, **윈도우의 경우 LF를 강제해주면 해결된다**는 내용의 글들이 많았다.
+
+CR은 Carrage Return, LF는 Line Feed다. 간단히 말하자면 운영체제가 줄바꿈을 처리하는 방식에 대한 구분동작이라고 설명할 수 있겠다.
+
+정리하자면 유닉스 기반 시스템(Linux/Mac OS)에서는 LF(`\n`)만으로도 줄바꿈이 되는 반면 윈도우에서는 CRLF(`\r\n`)가 모두 입력되어야 줄바꿈이 처리된다.
+
+이 내용을 기반으로 상황을 추론해보자.
+
+- lint/prettier 입장에서는 LF만으로 줄바꿈을 처리할 수 있을 줄 알았는데,
+- 윈도우 운영체제 상에서는 CR까지 입력 받아야 줄바꿈이 처리되고,
+- 줄바꿈 되지 않았으므로 lint는 계속 해서 줄바꿈을 적용하라는 에러를 출력한다
+
+의 상황인듯 하다.
+
+[출처]
+
+[https://saengmotmi.netlify.app/trouble shooting/2020-06-28 delete cr prettier/](https://saengmotmi.netlify.app/trouble%20shooting/2020-06-28%20delete%20cr%20prettier/)
