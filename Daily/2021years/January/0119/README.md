@@ -16,7 +16,7 @@ React- TypeScript는 기존 사용하던 cra 예제 사용해서 추가적으로
 
 ### 프로젝트 esLint / Prettier 적용
 
-[01.14](https://www.notion.so/01-14-957780603da04d7c8f6e03b992aa6145)
+[01.14](https://github.com/EunBKo/TIL/tree/main/Daily/2021years/January/0114)
 
 위 페이지를 참조하면 된다😀
 
