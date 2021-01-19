@@ -13,10 +13,7 @@
 ### 확장 프로그램 설치
 
 먼저 확장 프로그램을 설치해준다. 
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7f562c3d-301a-4b36-9f60-920611654e74/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7f562c3d-301a-4b36-9f60-920611654e74/Untitled.png)
-
- 
+https://github.com/EunBKo/TIL/issues/1#issue-788830011 
 
 아주 손쉽게 install이 가능하다.
 
