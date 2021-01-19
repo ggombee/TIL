@@ -13,7 +13,9 @@
 ### 확장 프로그램 설치
 
 먼저 확장 프로그램을 설치해준다. 
-https://github.com/EunBKo/TIL/issues/1#issue-788830011 
+
+![Untitled](https://user-images.githubusercontent.com/58289110/105010362-f5bb3d00-5a7e-11eb-80c7-6a49d356744b.png)
+
 
 아주 손쉽게 install이 가능하다.
 
