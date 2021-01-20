@@ -6,7 +6,7 @@ HTML 파일 어딘가에 <div> 속 모든 엘리먼트를 React DOM에서 관리
 
 React 엘리먼트를 루트 DOM에 렌더링하려면 ReactDOM.render()를 사용한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5f4ecdf-4177-4466-8eba-97e8e5e97a1e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5f4ecdf-4177-4466-8eba-97e8e5e97a1e/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/58289110/105181709-7f4a3800-5b6f-11eb-8ed7-0863855e078a.png)
 
 ### React.Element
 
