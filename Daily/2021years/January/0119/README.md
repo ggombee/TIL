@@ -10,7 +10,7 @@ React- TypeScript는 기존 사용하던 cra 예제 사용해서 추가적으로
 
 - 로컬 환경에서 개발 우선
 
-### 프로젝트 실행
+### 프로젝트 실행 
 
 프로젝트 root에서 yarn install >  yarn start
 
