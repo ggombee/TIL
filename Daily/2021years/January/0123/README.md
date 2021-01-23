@@ -16,6 +16,6 @@ cmd창을 이용해서 프로젝트를 진행하여도 무방하나, 이 cmd 애
 
 Extension(Ctrl+Shift+X) 에서 Materail Theme과 SynthWave '84를 다운받으면 더 이쁜 테마로 이용가능하다 ^^
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aa212065-cc64-4b7f-b85c-aaed729f6d09/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aa212065-cc64-4b7f-b85c-aaed729f6d09/Untitled.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/769968df-9c1c-409f-b449-1c94bd089e8e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/769968df-9c1c-409f-b449-1c94bd089e8e/Untitled.png)
+![Untitled (1)](https://user-images.githubusercontent.com/58289110/105577805-21ac2a80-5dbf-11eb-919c-622f8da42f2b.png)
+ 
+ ![Untitled (2)](https://user-images.githubusercontent.com/58289110/105577833-3e486280-5dbf-11eb-9520-0a71053fa83b.png)
