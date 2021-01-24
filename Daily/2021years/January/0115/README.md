@@ -23,7 +23,7 @@ function Counter() {
 }
 
 export default Counter;
-```
+``` 
 
 ### Expected linebreaks to be 'LF' but found 'CRLF' 오류 관련
 
