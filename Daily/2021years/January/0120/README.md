@@ -88,7 +88,7 @@ function App() {
 
 export default App;
 ```
-
+ 
 [참조]
 
 [https://react.vlpt.us/styling/03-styled-components.html](https://react.vlpt.us/styling/03-styled-components.html) - css
