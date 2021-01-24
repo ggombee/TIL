@@ -107,4 +107,3 @@ ts파일 만들고 vsconde 껐다 키면 에러가 없어진다.
 [https://medium.com/tapjoykorea/typescript-현업-적용-후기-caad266c8142](https://medium.com/tapjoykorea/typescript-%ED%98%84%EC%97%85-%EC%A0%81%EC%9A%A9-%ED%9B%84%EA%B8%B0-caad266c8142)
 
 [https://musma.github.io/2019/03/05/typescript-getting-started.html](https://musma.github.io/2019/03/05/typescript-getting-started.html)
- 
