@@ -17,4 +17,3 @@
 ```jsx
 const categoryList = categories.find((obj) => obj.catNo === catNo);
 ```
- 
