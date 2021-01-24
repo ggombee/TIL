@@ -141,7 +141,7 @@ HashRouter, Browser Router의 차이는 아래 페이지에서 확인한다.
 
 [https://likejirak.tistory.com/66](https://likejirak.tistory.com/66)
 
-### 최적화 TIP
+### 최적화 TIP 
 
 패키지를 설치할 때 yarn install --production을 입력하거나 환경변수가 NODE_ENV=production 이면 dependancy에 있는 패키지만 설치해서 빌드 결과물 크기를 최적화할 수 있다. 그래서 프로젝트에 꼭 필요한 패키지만 dependancy로 설치하고, typescript나 eslint 등 빌드 파일 실행에 필요하지 않는 패키지는 devDependancy로 설치한다.
 
