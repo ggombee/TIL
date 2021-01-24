@@ -162,5 +162,4 @@ CR은 Carrage Return, LF는 Line Feed다. 간단히 말하자면 운영체제가
 의 상황인듯 하다. 
 
 [출처]
-
 [https://saengmotmi.netlify.app/trouble shooting/2020-06-28 delete cr prettier/](https://saengmotmi.netlify.app/trouble%20shooting/2020-06-28%20delete%20cr%20prettier/)
