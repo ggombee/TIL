@@ -1,19 +1,150 @@
-## persist
+## Image mockData를 dispatch 해서 swiper 적용해보기
 
-react만 사용해도 애플리케이션을 개발할 수 있다.
+### mockdata.js
 
-하지만, 규모가 커지고 구조가 복잡해질수록 컴포넌트의 상태(state) prop으로 넘겨주고 관리하는 일이 귀찮아진다. 리액트로 상태를 관리하면 부모 자식 관계처럼 위에서 아래로 또는 아래에서 위로 상태(state)를 props로 넘겨주어야 한다. 하지만 아래 그림과 같이 redux를 사용하게 되면 위아래로 상태 값을 넘겨주지 않고도 상태 값들을 저장하고 받아올 수 있다.
+```jsx
+export const imageData = [
+  {
+    id: 1,
+    image:
+      "app/resources/renewal/images/temp/main_swiper1.jpg",
+  },
+  {
+    id: 2,
+    image:
+      "app/resources/renewal/images/temp/main_swiper2.jpg",
+  },
+  {
+    id: 3,
+    image:
+      "app/resources/renewal/images/temp/main_swiper3.jpg",
+  },
+  {
+    id: 4,
+    image:
+      "app/resources/renewal/images/temp/main_swiper4.jpg",
+  },
+  {
+    id: 5,
+    image:
+      "app/resources/renewal/images/temp/main_swiper5.jpg",
+  },
+];
+```
 
-redux는 상태 관리에 효율적이지만 리덕스 상태 앱을 종료하거나 브라우저를 새로 고침만 해도 저장되어 있던 모든 상태들이 없어진다. Redux Persist 라이브러리를 사용하면 마치 캐시 기능과 같이 상태 값을 지속적으로 저장한다.
+데이터를 받아오기 위해 스토어 세팅을 먼저 해준다. 
 
-`redux` 상태 관리 라이브러리를 많이 사용하실 것입니다.
+createStore로 store.js를 만들고 루트 리듀서를 생성한다.
 
-리덕스의 store는 페이지를 새로고침 할 경우 state가 날아가는 것을 보실 수 있습니다.
+### rootReducer.js
 
-이것에 대한 대응 방안으로 localStorage 또는 session에 저장하고자 하는 reducer state를 저장하여, 새로고침 하여도 저장공간에 있는 데이터를 redux에 불러오는 형식으로 이루어집니다.
+```jsx
+import { combineReducers } from "redux";
 
-위에서 말한 이 작동을 위해 `redux-persist`를 사용합니다.
+import mainReducer from "./main/reducer";
 
-redux가 이미 세팅되어 있다고 가정하고, redux-persist를 추가하는 작업을 진행하겠습니다.
+const rootReducer = combineReducers({
+  mainReducer,
+});
 
-![Untitled (1)](https://user-images.githubusercontent.com/58289110/105854004-a7331300-6029-11eb-8419-d366d34662a4.png)
+export default rootReducer;
+```
+
+### configureStore.js
+
+```jsx
+import { createStore } from "redux";
+
+import rootReducer from "./rootReducer";
+
+const configureStore = () => createStore(rootReducer);
+
+export default configureStore;
+```
+
+그리고 index.js에 import 해준다..
+
+### index.js
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app/App";
+
+import reportWebVitals from "./reportWebVitals";
+import configureStore from "./stores/configureStore";
+
+const store = configureStore();
+
+ReactDOM.render(<App store={store} />, document.getElementById("root"));
+
+reportWebVitals();
+```
+
+서버 연결이 아직 되어있지 않은 프로젝트 이기 때문에, 이미지 배너 리스트를 mockdata에 명시해두고, mockdata를 dispatch함으로써 스토어의 기능을 테스트 해본다.
+
+### MainImageBanner.js
+
+```jsx
+import React, { useCallback, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { imageData } from "../../../stores/main/__mocks__/mockData";
+import { getImageList } from "../../../stores/main/actions";
+
+function MainImageBanner() {
+  const { bannerList } = useSelector((state) => {
+    return {
+      bannerList: state.mainReducer.imageItem,
+    };
+  });
+
+  const dispatch = useDispatch();
+
+  const getImageBanner = useCallback(() => {
+    dispatch(getImageList(imageData));
+  }, [dispatch]);
+
+  useEffect(() => {
+    getImageBanner();
+  }, [getImageBanner]);
+
+  return (
+    <>
+      {bannerList &&
+        bannerList.map((item) => (
+          <div key={item.id}>
+            <img src={item.image} width="100%" height="100" alt={item.id}></img>
+          </div>
+        ))}
+    </>
+  );
+}
+
+export default MainImageBanner;
+```
+
+이때 , 받아온 이미지의 경로를 찾지 못하여 렌더링이 안되는 오류가 생길 것이다.
+
+이미지의 경로와 url도메인이 합쳐지면서 이미지 파일의 경로를 찾지 못하기 때문이다..(아마)
+
+이미지의 경로는 서버에 올라가 있는 이미지 일경우 렌더링 되므로, 서버가 없는 경우 구글 이미지 검색 후, 우클릭 > 이미지 링크 복사 후 그 링크를 넣어주도록 한다.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d3f0c56-6f98-4b9d-a875-be6799e80e5a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d3f0c56-6f98-4b9d-a875-be6799e80e5a/Untitled.png)
+
+나는  개인페이지에 올려놓은 이미지의 링크를 넣어주었다. ~~(도메인 부끄러우니까 가리기..)~~
+
+그리고 실행을 해주면,,
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/169ef845-c364-466e-886a-037c04a6c6dd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/169ef845-c364-466e-886a-037c04a6c6dd/Untitled.png)
+
+쨘! 이렇게 이미지가 다섯개가 노출되는 것을 확인 할 수 있다.
+
+이미지는 스와이퍼 테스트를 위해 임의로 제작한 이미지다....
+
+바로 스와이퍼 라이브러리 깔아서 테스트를 해보고 싶지만 우선,, 
+
+안오신다했던 PL님이 오시게 되서 머리빠지도록 열심히 짠 구조가 날아갈까봐 걱정했는데,, 
+
+내가 만든 구조를 채택하여 프로젝트를 진행하기로 하여서 다행이다..
+
+다만 프로젝트가 JS가 아닌 TS로 바뀔 것 같기에..  지금 프로젝트에 TypeScript 적용을 먼저하고, 후임이 들어오기 전에 ESLint와 Prettier 설정을 마저 해놓아야 한다... 훟....하하핳 신난ㄷㅏ...🤑
