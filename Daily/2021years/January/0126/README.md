@@ -129,13 +129,13 @@ export default MainImageBanner;
 
 이미지의 경로는 서버에 올라가 있는 이미지 일경우 렌더링 되므로, 서버가 없는 경우 구글 이미지 검색 후, 우클릭 > 이미지 링크 복사 후 그 링크를 넣어주도록 한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d3f0c56-6f98-4b9d-a875-be6799e80e5a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d3f0c56-6f98-4b9d-a875-be6799e80e5a/Untitled.png)
+![Untitled (2)](https://user-images.githubusercontent.com/58289110/105854846-be263500-602a-11eb-8b84-8cf158cb0efd.png)
 
 나는  개인페이지에 올려놓은 이미지의 링크를 넣어주었다. ~~(도메인 부끄러우니까 가리기..)~~
 
 그리고 실행을 해주면,,
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/169ef845-c364-466e-886a-037c04a6c6dd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/169ef845-c364-466e-886a-037c04a6c6dd/Untitled.png)
+![Untitled (3)](https://user-images.githubusercontent.com/58289110/105854849-bebecb80-602a-11eb-8f74-ed2c84a3ec3e.png)
 
 쨘! 이렇게 이미지가 다섯개가 노출되는 것을 확인 할 수 있다.
 
