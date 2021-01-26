@@ -6,14 +6,14 @@ react만 사용해도 애플리케이션을 개발할 수 있다.
 
 redux는 상태 관리에 효율적이지만 리덕스 상태 앱을 종료하거나 브라우저를 새로 고침만 해도 저장되어 있던 모든 상태들이 없어진다. Redux Persist 라이브러리를 사용하면 마치 캐시 기능과 같이 상태 값을 지속적으로 저장한다.
 
-`redux` 상태 관리 라이브러리를 많이 사용하실 것입니다.
+`redux` 상태 관리 라이브러리를 많이 사용하실 것이다.
 
-리덕스의 store는 페이지를 새로고침 할 경우 state가 날아가는 것을 보실 수 있습니다.
+리덕스의 store는 페이지를 새로고침 할 경우 state가 날아가는 것을 보실 수 있다.
 
-이것에 대한 대응 방안으로 localStorage 또는 session에 저장하고자 하는 reducer state를 저장하여, 새로고침 하여도 저장공간에 있는 데이터를 redux에 불러오는 형식으로 이루어집니다.
+이것에 대한 대응 방안으로 localStorage 또는 session에 저장하고자 하는 reducer state를 저장하여, 새로고침 하여도 저장공간에 있는 데이터를 redux에 불러오는 형식으로 이루어진다.
 
-위에서 말한 이 작동을 위해 `redux-persist`를 사용합니다.
+위에서 말한 이 작동을 위해 `redux-persist`를 사용한다.
 
-redux가 이미 세팅되어 있다고 가정하고, redux-persist를 추가하는 작업을 진행하겠습니다.
+redux가 이미 세팅되어 있다고 가정하고, redux-persist를 추가하는 작업을 진행하겠다. 
 
 ![Untitled](https://user-images.githubusercontent.com/58289110/105718803-f95e3080-5f64-11eb-8eac-ef09be52b984.png)
