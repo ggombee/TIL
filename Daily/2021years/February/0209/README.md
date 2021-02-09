@@ -1,12 +1,7 @@
-mac 개발환경 세팅
+# Styled-Component
 
-https://ifuwanna.tistory.com/189
+CSS in JS를 의미한다. 문구 그대로, CSS를 JS 안에 작성하는 것을 의믜합니다.
 
-homebrew 설치
-
-https://may0301.tistory.com/19
-
-Git 세팅
-
-https://ifuwanna.tistory.com/189
-
+```jsx
+$ yarn add styled-components
+```
