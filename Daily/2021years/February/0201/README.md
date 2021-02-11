@@ -1,3 +1,5 @@
+- [x]  typescript → swiper 적용
+- [x]  js rayout 잡기 - style component
 
 ## eslint 에러 잭팟
 
