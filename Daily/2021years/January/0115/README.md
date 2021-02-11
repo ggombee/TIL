@@ -37,7 +37,7 @@ export default Counter;
 
 이거를 .eslintrc.json파일에 추가하니까 괜찮아졌다!
 
-근데 또 다른 이슈가...
+근데 또 다른 이슈가... 
  
 ### Mobx, Redux 차이점 — 꼭 정독
 
