@@ -1,4 +1,4 @@
-# React TypeScript Tap 만들기
+# React TypeScript Tab 만들기
 
 ## Router로 만들기
 
