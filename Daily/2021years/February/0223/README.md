@@ -1,0 +1,1 @@
+[https://soyoung210.github.io/redux-toolkit/tutorials/basic-tutorial/#redux-counter-vanilla-예제](https://soyoung210.github.io/redux-toolkit/tutorials/basic-tutorial/#redux-counter-vanilla-%EC%98%88%EC%A0%9C)
