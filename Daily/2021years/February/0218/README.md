@@ -1,5 +1,5 @@
 ## vscode 로 깃 플러그인 사용해서 폴더명 바꿀때 오류
-
+ 
 
 ```jsx
 git mv oldname tempname
