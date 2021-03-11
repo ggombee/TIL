@@ -89,7 +89,7 @@ let도 선언 전 줄까지 TDZ의 영향을 받는다.
 
 부모 클래스를 상속받았다면, 생성자 안에서 super()를 호출하기 전까지 this 바인딩은 TDZ에 있다.
 
-```jsx
+```jsx 
 class MuscleCar extends Car {
   constructor(color, power) {
     this.power = power;
