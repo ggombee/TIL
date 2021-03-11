@@ -85,7 +85,7 @@ npx typescript --init
 
 tsconfig.json파일 자동 생성 후 compilorOptions에 jsx 속성에 'react'값을 추가해야 한다.
 
-(기본으로 주석처리 되어 있으므로 풀고 추가한다)
+(기본으로 주석처리 되어 있으므로 풀고 추가한다) 
 
 ```jsx
 "compilorOptions": {
