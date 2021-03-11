@@ -7,7 +7,7 @@ action, reducer, store 필요
 🤷‍♀️ 개발 도중 state 이름을 변경하는 등의 수정사항이 발생했을 때 관련된 코드를 모두 수정해야 하는 문제 발생 ! ㅜㅜ
 
 ## 그래서 Ducks Pattern!🦆
-
+ 
 (actionTypes, actions, reducer를 한곳에서!)
 
 리액트에서 리덕스를 사용할 때 action과 리듀서를 하나의 파일에서 사용하는 것을 말한다. 
