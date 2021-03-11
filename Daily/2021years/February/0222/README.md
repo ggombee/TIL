@@ -1,6 +1,6 @@
 ## 코드 정리 해야됨
 
-import 경로지정 말고 각 폴더마다 index파일에 export를 해서 한꺼번에 import 한다
+import 경로지정 말고 각 폴더마다 index파일에 export를 해서 한꺼번에 import 한다 
 
 ```jsx
 import React from 'react';
