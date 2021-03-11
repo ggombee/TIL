@@ -18,7 +18,7 @@ React- TypeScript는 기존 사용하던 cra 예제 사용해서 추가적으로
 
 [01.14](https://github.com/EunBKo/TIL/tree/main/Daily/2021years/January/0114)
 
-위 페이지를 참조하면 된다😀
+위 페이지를 참조하면 된다😀 
 
 노션을 꾸준히 하려고 노력하는데,, 역시 힘들다...
 

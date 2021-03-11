@@ -85,7 +85,7 @@ npx typescript --init
 
 tsconfig.json파일 자동 생성 후 compilorOptions에 jsx 속성에 'react'값을 추가해야 한다.
 
-(기본으로 주석처리 되어 있으므로 풀고 추가한다)
+(기본으로 주석처리 되어 있으므로 풀고 추가한다) 
 
 ```jsx
 "compilorOptions": {
@@ -106,4 +106,4 @@ ts파일 만들고 vsconde 껐다 키면 에러가 없어진다.
 
 [https://medium.com/tapjoykorea/typescript-현업-적용-후기-caad266c8142](https://medium.com/tapjoykorea/typescript-%ED%98%84%EC%97%85-%EC%A0%81%EC%9A%A9-%ED%9B%84%EA%B8%B0-caad266c8142)
 
-[https://musma.github.io/2019/03/05/typescript-getting-started.html](https://musma.github.io/2019/03/05/typescript-getting-started.html)
+[https://musma.github.io/2019/03/05/typescript-getting-started.html](https://musma.github.io/2019/03/05/typescript-getting-started.html) 
