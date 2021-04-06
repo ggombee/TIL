@@ -14,7 +14,7 @@ Switch case 문을 작성할때 default type으로 null을 리턴할때
 
 > TS2322: Type 'null' is not assignable to type 'ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<any, any, any>)>'.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3df03298-b493-4e7a-bdf2-a004dccec213/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3df03298-b493-4e7a-bdf2-a004dccec213/Untitled.png)
+![Untitled (6)](https://user-images.githubusercontent.com/58289110/113976586-4d966280-987c-11eb-940b-bf1628ef4a37.png)
 
 검색을 해보니 Typescript 환경에서의 function 함수와 class 함수의 리턴타입과 관련이 있었다.
 
