@@ -1,5 +1,6 @@
 # React.ReactElement | null
 
+## 에러
 보통 컴포넌트를 만들때 React.ReactElement를 써서 만들었는데,
 
 ```java
