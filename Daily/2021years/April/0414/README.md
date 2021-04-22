@@ -17,3 +17,4 @@ children
 outline
 
 따라서 만약 background-color와 background-image 가 함께 세팅되어 있고, background-image로 설정한 외부 리소스의 크기가 크다면 background-color 를 먼저 보게 될 것이고, 나중에 이미지가 완전히 로드된 후 background-image로 교체가 될 것이다.
+  
