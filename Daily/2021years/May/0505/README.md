@@ -1,3 +1,4 @@
+# 1. Beatiful Soup
 - Beautiful Soup
     - Beautiful Soup 정의
     - Beautiful Soup 설정하기
@@ -5,11 +6,11 @@
     - 위키피디아 예제
 
 
-# 1. 정의
+## 1. 정의
 
 Beautiful Soup은 HTML과 XML 문서를 구문 분석하기 위한 파이썬 패키지이다. HTML에서 데이터를 추출하는 데 사용할 수 있는 구문 분석된 페이지에 대한 구문 분석 트리를 만든다. 이것은 웹 스크래핑에 유용하다.[위키백과]
 
-# 2. Beautiful Soup 설정하기
+## 2. Beautiful Soup 설정하기
 
 [pypi.org/project/](https://pypi.org/)로 접속한다.
 
