@@ -1,4 +1,4 @@
-#Next.js
+# Next.js
 
 next.js는 SSR(Server Side Rendering)을 지원하는 React 프레임워크이다.
 
