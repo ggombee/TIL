@@ -50,7 +50,7 @@ Npm , Yarn1 에서는 의존성들이 트리형태로 분포해 있는 것을 **
 
  `yarn add A` 시 A, B, C가 설치된다.
 
-A라는 라이브러리에서, C를 참조할수 있다.
+A라는 라이브러리에서, C를 참조할수 있다. 
 
 - `import { something } from 'C'`
 
