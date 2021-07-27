@@ -43,3 +43,9 @@ type User {
 해당 주소를 아래 주소에 접속하여 sandbox란에 입력 하면
 
 [https://studio.apollographql.com/sandbox/schema/sdl](https://studio.apollographql.com/sandbox/schema/sdl)
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd4b371e-c3e6-4ac1-beec-db9a2c65453c/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd4b371e-c3e6-4ac1-beec-db9a2c65453c/Untitled.png)
+
+아래와 같이 스키마를 확인할 수 있다.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/149a243d-ef30-4d3d-b580-345d9c34e4b8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/149a243d-ef30-4d3d-b580-345d9c34e4b8/Untitled.png)
