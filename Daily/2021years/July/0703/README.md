@@ -49,3 +49,7 @@ type User {
 아래와 같이 스키마를 확인할 수 있다.
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/149a243d-ef30-4d3d-b580-345d9c34e4b8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/149a243d-ef30-4d3d-b580-345d9c34e4b8/Untitled.png)
+
+그리고 이 스키마를 [GraphQL Voyager](https://apis.guru/graphql-voyager/)에 접속해서 붙여넣기 하면 클래스룸의 도메인 모델을 확인할 수 있다.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eae52e4d-01b8-4cd5-bf88-d3bbb6182384/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eae52e4d-01b8-4cd5-bf88-d3bbb6182384/Untitled.png)
