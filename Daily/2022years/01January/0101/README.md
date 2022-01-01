@@ -68,7 +68,7 @@ const More = () => {
           <View style={styles.typoCover}>
             <Text style={styles.user}>{principal?.nickname}</Text>
             <View style={styles.iconContainer}>
-              {/* 타입에 따른 스타일 변화 */}
+              {/* 타입에 따른 스타일 변화 --> 객체의 성질을 이용 */}
               <View style={[styles.iconImage, styles[principal?.grant_type]]}>
                 <Image {...IMAGE_PROPS[principal?.grant_type]} />
               </View>
